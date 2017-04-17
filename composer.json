@@ -1,6 +1,20 @@
 {
-  "name": "GRBJ Archive Scraper",
+  "name": "funphp/web-scraper",
+  "description": "GRBJ Archive Scraper",
+  "type": "library",
+  "authors": [
+    {
+      "name": "Abdullah Bin Salam",
+      "email": "ab_duetcse@yahoo.com"
+    }
+  ],
   "require": {
-    "guzzlehttp/guzzle": "~6.0"
+    "php": ">=5.5.9",
+    "guzzlehttp/guzzle": "~6.0",
+    "symfony/dom-crawler": "^3.2",
+    "symfony/css-selector": "^3.2"
+  },
+  "autoload": {
+    "psr-4": { "funphp\\": "src/" }
   }
 }
