@@ -1,6 +1,6 @@
 {
   "name": "funphp/web-scraper",
-  "description": "GRBJ Archive Scraper",
+  "description": "GRBJ Web Scraper",
   "type": "library",
   "authors": [
     {

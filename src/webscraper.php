@@ -45,7 +45,7 @@ class WebScraper
             'base_uri' => $this->url,
             'timeout' => 0,
         ]);
-        # Request / or root
+        
         $response = $client->request('GET', '/authors.html');
         $crawler = new Crawler((string)$response->getBody());
         $filter = $crawler->filter('.featured .record .author-bio .author-info');
