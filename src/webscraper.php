@@ -1,6 +1,6 @@
 <?php
 /**
- * Disclaimer
+ * 
  * It's Guzzle and Symfony Web Crawler to get authors with articles
  *
  */
@@ -45,7 +45,7 @@ class WebScraper
             'base_uri' => $this->url,
             'timeout' => 0,
         ]);
-        
+
         $response = $client->request('GET', '/authors.html');
         $crawler = new Crawler((string)$response->getBody());
         $filter = $crawler->filter('.featured .record .author-bio .author-info');
